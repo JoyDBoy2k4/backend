@@ -1,0 +1,138 @@
+[
+  {
+    "id": "uw001",
+    "name": "Big Three",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/big-three.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw002",
+    "name": "Itachi",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/itachi.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw003",
+    "name": "Jesus",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/jesus.jpg",
+    "description": "Jesus customized t-shirt."
+  },
+  {
+    "id": "uw004",
+    "name": "Jesus Is King",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/jesus-is-king.jpg",
+    "description": "Jesus customized t-shirt."
+  },
+  {
+    "id": "uw005",
+    "name": "Jinwoo",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/jinwoo.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw006",
+    "name": "JoyBoy Black",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/joyboy-black.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw007",
+    "name": "JoyBoy White",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/joyboy-white.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw008",
+    "name": "Kakashi",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/kakashi.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw009",
+    "name": "One Piece Shirt",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/one-piece.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw010",
+    "name": "Shanks",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/shanks.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw011",
+    "name": "Togi",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/togi.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw012",
+    "name": "Togi-Behind",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/togi-behind.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw013",
+    "name": "Company 8",
+    "category": "Upperwear",
+    "price": 950.00,
+    "image": "assets/images/company-8.jpg",
+    "description": "Anime customized hoody."
+  },
+  {
+    "id": "uw014",
+    "name": "Heart Pirates",
+    "category": "Upperwear",
+    "price": 950.00,
+    "image": "assets/images/heart-pirates.jpg",
+    "description": "Anime customized hoody."
+  },
+  {
+    "id": "uw015",
+    "name": "One Piece Hoodie",
+    "category": "Upperwear",
+    "price": 950.00,
+    "image": "assets/images/one-piece.jpg",
+    "description": "Anime customized hoody."
+  },
+  {
+    "id": "uw016",
+    "name": "Scouts Legion",
+    "category": "Upperwear",
+    "price": 950.00,
+    "image": "assets/images/scouts-legion.jpg",
+    "description": "Anime customized hoody."
+  },
+  {
+    "id": "uw017",
+    "name": "Scouts Legion Coat",
+    "category": "Upperwear",
+    "price": 950.00,
+    "image": "assets/images/scouts-legion-coat.jpg",
+    "description": "Anime customized coat."
+  }
+]
