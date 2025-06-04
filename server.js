@@ -1,30 +1,59 @@
 const express = require("express");
-const fs = require("fs");
+const fs = require("fs").promises;
 const cors = require("cors");
 const path = require("path");
-const app = express();
 
-// IMPORTANT: Use Render's assigned port or fallback to 3000 locally
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+// Middleware
+app.use(cors({ origin: '*' })); // Restrict origin in production
 app.use(express.json());
 
-// Serve static files for images (adjust path if needed)
+// Serve static product images
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
-// Load data once on startup
-let products = JSON.parse(fs.readFileSync("products.json", "utf-8"));
-let sales = JSON.parse(fs.readFileSync("sales.json", "utf-8"));
-let stock = JSON.parse(fs.readFileSync("stock.json", "utf-8"));
+// File loading helpers
+const dataPath = filename => path.join(__dirname, filename);
 
-// Get all products endpoint
+// JSON data
+let products = [];
+let sales = [];
+let stock = [];
+
+// Load data on startup
+async function loadData() {
+  try {
+    const [prodData, salesData, stockData] = await Promise.all([
+      fs.readFile(dataPath("products.json"), "utf-8"),
+      fs.readFile(dataPath("sales.json"), "utf-8"),
+      fs.readFile(dataPath("stock.json"), "utf-8")
+    ]);
+    products = JSON.parse(prodData);
+    sales = JSON.parse(salesData);
+    stock = JSON.parse(stockData);
+  } catch (err) {
+    console.error("Error reading JSON files:", err);
+  }
+}
+
+// Save data helpers
+async function saveData(filename, data) {
+  try {
+    await fs.writeFile(dataPath(filename), JSON.stringify(data, null, 2));
+  } catch (err) {
+    console.error(`Error writing to ${filename}:`, err);
+    throw err;
+  }
+}
+
+// API: Get all products
 app.get("/api/products", (req, res) => {
   res.json(products);
 });
 
-// Handle sale (checkout)
-app.post("/api/sale", (req, res) => {
+// API: Post a new sale (checkout)
+app.post("/api/sale", async (req, res) => {
   const { cartItems } = req.body;
 
   if (!Array.isArray(cartItems) || cartItems.length === 0) {
@@ -34,60 +63,81 @@ app.post("/api/sale", (req, res) => {
   let totalProfit = 0;
   let outOfStock = [];
 
-  cartItems.forEach(item => {
-    const stockItem = stock.find(p => p.id === item.id);
-    if (!stockItem) return;
-
-    if (stockItem.stock < item.quantity) {
-      outOfStock.push(item.id);
-      return;
+  for (const item of cartItems) {
+    const { id, quantity } = item;
+    if (!id || typeof quantity !== "number" || quantity <= 0) {
+      return res.status(400).json({ message: "Invalid item in cart." });
     }
 
-    stockItem.stock -= item.quantity;
+    const stockItem = stock.find(p => p.id === id);
+    const product = products.find(p => p.id === id);
 
-    // Calculate profit (item.price - costPrice)
-    const profit = (item.price - stockItem.costPrice) * item.quantity;
+    if (!stockItem || !product) {
+      return res.status(404).json({ message: `Product not found for ID: ${id}` });
+    }
+
+    if (stockItem.stock < quantity) {
+      outOfStock.push({ id, available: stockItem.stock });
+      continue;
+    }
+
+    // Deduct stock and calculate profit
+    stockItem.stock -= quantity;
+    const profit = (product.price - stockItem.costPrice) * quantity;
     totalProfit += profit;
-  });
+  }
 
   if (outOfStock.length > 0) {
     return res.status(400).json({
-      message: `Not enough stock for: ${outOfStock.join(", ")}`
+      message: "Some items are out of stock",
+      items: outOfStock
     });
   }
 
   const sale = {
     timestamp: new Date().toISOString(),
     items: cartItems,
-    profit: totalProfit
+    profit: parseFloat(totalProfit.toFixed(2))
   };
 
   sales.push(sale);
 
-  fs.writeFileSync("sales.json", JSON.stringify(sales, null, 2));
-  fs.writeFileSync("stock.json", JSON.stringify(stock, null, 2));
+  try {
+    await Promise.all([
+      saveData("sales.json", sales),
+      saveData("stock.json", stock)
+    ]);
+  } catch (err) {
+    return res.status(500).json({ message: "Failed to save sale data." });
+  }
 
   res.json({
     message: "Sale recorded",
-    profit: totalProfit.toFixed(2)
+    profit: sale.profit
   });
 });
 
-// Get sales report summary
+// API: Sales summary report
 app.get("/api/report", (req, res) => {
   const totalRevenue = sales.reduce((sum, sale) => {
-    const saleTotal = sale.items.reduce((itemSum, item) =>
-      itemSum + (item.price * item.quantity), 0);
-    return sum + saleTotal;
+    return sum + sale.items.reduce((acc, item) => {
+      const product = products.find(p => p.id === item.id);
+      return acc + (product ? product.price * item.quantity : 0);
+    }, 0);
   }, 0);
+
+  const totalProfit = sales.reduce((sum, sale) => sum + sale.profit, 0);
 
   res.json({
     salesCount: sales.length,
     totalRevenue: totalRevenue.toFixed(2),
-    totalProfit: sales.reduce((sum, sale) => sum + sale.profit, 0).toFixed(2)
+    totalProfit: totalProfit.toFixed(2)
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+// Start server after loading data
+loadData().then(() => {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on http://localhost:${PORT}`);
+  });
 });
