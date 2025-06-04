@@ -16,8 +16,45 @@
   { "id": "uw015", "stock": 50, "costPrice": 950.0 },
   { "id": "uw016", "stock": 50, "costPrice": 950.0 },
   { "id": "uw017", "stock": 50, "costPrice": 950.0 },
-  { "id": "g502",  "stock": 50, "costPrice": 659.4 }
+  { "id": "lw101", "stock": 50, "costPrice": 950.0 },
+  { "id": "lw102", "stock": 50, "costPrice": 950.0 },
+  { "id": "lw103", "stock": 50, "costPrice": 950.0 },
+  { "id": "lw104", "stock": 50, "costPrice": 950.0 },
+  { "id": "lw105", "stock": 50, "costPrice": 650.0 },
+  { "id": "lw106", "stock": 50, "costPrice": 950.0 },
+  { "id": "lw107", "stock": 50, "costPrice": 650.0 },
+  { "id": "fw201", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw202", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw203", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw204", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw205", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw206", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw207", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw208", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw209", "stock": 50, "costPrice": 5000.0 },
+  { "id": "fw210", "stock": 50, "costPrice": 5000.0 },
+  { "id": "hw301", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw302", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw303", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw304", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw305", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw306", "stock": 50, "costPrice": 450.0 },
+  { "id": "hw307", "stock": 50, "costPrice": 950.0 },
+  { "id": "hw308", "stock": 50, "costPrice": 350.0 },
+  { "id": "hw309", "stock": 50, "costPrice": 350.0 },
+  { "id": "ac401", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac402", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac403", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac404", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac405", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac406", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac407", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac408", "stock": 50, "costPrice": 300.0 },
+  { "id": "ac409", "stock": 50, "costPrice": 950.0 }
 ]
 
+
+
+ 
 
  
