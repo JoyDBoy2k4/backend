@@ -4,7 +4,7 @@
     "name": "Big Three",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/big-three.jpg",
+    "image": "assets/images/big_three.jpg",
     "description": "Anime customized t-shirt."
   },
   {
@@ -28,7 +28,7 @@
     "name": "Jesus Is King",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/jesus-is-king.jpg",
+    "image": "assets/images/jesus_is_king.jpg",
     "description": "Jesus customized t-shirt."
   },
   {
@@ -44,7 +44,7 @@
     "name": "JoyBoy Black",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/joyboy-black.jpg",
+    "image": "assets/images/joyboy_black.jpg",
     "description": "Anime customized t-shirt."
   },
   {
@@ -52,7 +52,7 @@
     "name": "JoyBoy White",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/joyboy-white.jpg",
+    "image": "assets/images/joyboy_white.jpg",
     "description": "Anime customized t-shirt."
   },
   {
@@ -68,7 +68,7 @@
     "name": "One Piece Shirt",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/one-piece.jpg",
+    "image": "assets/images/one_piece.jpg",
     "description": "Anime customized t-shirt."
   },
   {
@@ -92,7 +92,7 @@
     "name": "Togi-Behind",
     "category": "Upperwear",
     "price": 450.00,
-    "image": "assets/images/togi-behind.jpg",
+    "image": "assets/images/togi_behind.jpg",
     "description": "Anime customized t-shirt."
   },
   {
@@ -100,7 +100,7 @@
     "name": "Company 8",
     "category": "Upperwear",
     "price": 950.00,
-    "image": "assets/images/company-8.jpg",
+    "image": "assets/images/company_8.jpg",
     "description": "Anime customized hoody."
   },
   {
@@ -108,7 +108,7 @@
     "name": "Heart Pirates",
     "category": "Upperwear",
     "price": 950.00,
-    "image": "assets/images/heart-pirates.jpg",
+    "image": "assets/images/heart_pirates.jpg",
     "description": "Anime customized hoody."
   },
   {
@@ -116,7 +116,7 @@
     "name": "One Piece Hoodie",
     "category": "Upperwear",
     "price": 950.00,
-    "image": "assets/images/one-piece.jpg",
+    "image": "assets/images/one_piece.jpg",
     "description": "Anime customized hoody."
   },
   {
@@ -124,7 +124,7 @@
     "name": "Scouts Legion",
     "category": "Upperwear",
     "price": 950.00,
-    "image": "assets/images/scouts-legion.jpg",
+    "image": "assets/images/scouts_legion.jpg",
     "description": "Anime customized hoody."
   },
   {
@@ -132,7 +132,287 @@
     "name": "Scouts Legion Coat",
     "category": "Upperwear",
     "price": 950.00,
-    "image": "assets/images/scouts-legion-coat.jpg",
+    "image": "assets/images/scouts_legion_coat.jpg",
     "description": "Anime customized coat."
+  },
+  {
+    "id": "lw101",
+    "name": "ASL",
+    "category": "Lowerwear",
+    "price": 950.00,
+    "image": "assets/images/asl.jpg",
+    "description": "Anime customized jeans."
+  },
+  {
+    "id": "lw102",
+    "name": "Heart Pirates",
+    "category": "Lowerwear",
+    "price": 950.00,
+    "image": "assets/images/heart_pirates.jpg",
+    "description": "Anime customized jeans."
+  },
+  {
+    "id": "lw103",
+    "name": "Harajuku",
+    "category": "Lowerwear",
+    "price": 950.00,
+    "image": "assets/images/harajuku.jpg",
+    "description": "Anime customized jeans."
+  },
+  {
+    "id": "lw104",
+    "name": "Itachi x Kakashi",
+    "category": "Lowerwear",
+    "price": 950.00,
+    "image": "assets/images/itachi_x_kakashi.jpg",
+    "description": "Anime customized jeans."
+  },
+  {
+    "id": "lw105",
+    "name": "Jojo",
+    "category": "Lowerwear",
+    "price": 650.00,
+    "image": "assets/images/jojo.jpg",
+    "description": "Anime customized shorts."
+  },
+  {
+    "id": "lw106",
+    "name": "Kurapika",
+    "category": "Lowerwear",
+    "price": 950.00,
+    "image": "assets/images/kurapika.jpg",
+    "description": "Anime customized jeans."
+  },
+  {
+    "id": "lw107",
+    "name": "Tanjiro",
+    "category": "Lowerwear",
+    "price": 650.00,
+    "image": "assets/images/tanjiro.jpg",
+    "description": "Anime customized shorts."
+  },
+  {
+    "id": "fw201",
+    "name": "Akatsuki Nike",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/akatsuki_nike.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw202",
+    "name": "Gaara Converse",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/gaara_converse.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw203",
+    "name": "Goku Adidas",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/goku_adidas.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw204",
+    "name": "Goku Nike",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/goku_nike.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw205",
+    "name": "Naruto Converse",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/naruto_converse.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw206",
+    "name": "Prince Vegeta Nike",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/prince_vegeta_nike.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw207",
+    "name": "Renji Asics",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/renji_asics.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw208",
+    "name": "Shanks Puma",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/shanks_puma.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw209",
+    "name": "Vegeta Nike",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/vegeta_nike.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "fw210",
+    "name": "Zoro Nike",
+    "category": "Footwear",
+    "price": 5000.00,
+    "image": "assets/images/zoro_nike.jpg",
+    "description": "Anime customized sneakers."
+  },
+  {
+    "id": "hw301",
+    "name": "Chopper",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/chopper.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw302",
+    "name": "Pikachu",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/pikachu.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw303",
+    "name": "Sonic",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/sonic.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw304",
+    "name": "Zoro",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/zoro.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw305",
+    "name": "Strawhat Cap",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/strawhat.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw306",
+    "name": "Earth Element",
+    "category": "Headwear",
+    "price": 450.00,
+    "image": "assets/images/earth_element.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw307",
+    "name": "Gear 5",
+    "category": "Headwear",
+    "price": 950.00,
+    "image": "assets/images/gear_5.jpg",
+    "description": "Anime customized caps."
+  },
+  {
+    "id": "hw308",
+    "name": "Rogue Ninja",
+    "category": "Headwear",
+    "price": 350.00,
+    "image": "assets/images/rogue_ninja.jpg",
+    "description": "Anime customized beanies."
+  },
+  {
+    "id": "hw309",
+    "name": "Uchiha",
+    "category": "Headwear",
+    "price": 350.00,
+    "image": "assets/images/uchiha.jpg",
+    "description": "Anime customized beanies."
+  },
+  {
+    "id": "ac401",
+    "name": "Akatsuki Bracelet",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/akatsuki_bracelet.jpg",
+    "description": "Anime customized bracelets."
+  },
+  {
+    "id": "ac402",
+    "name": "Akatsuki Rings",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/akatsuki_rings.jpg",
+    "description": "Anime customized rings."
+  },
+  {
+    "id": "ac403",
+    "name": "AOT Necklace",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/aot_necklace.jpg",
+    "description": "Anime customized necklace."
+  },
+  {
+    "id": "ac404",
+    "name": "Espada 6",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/espada_6.jpg",
+    "description": "Anime customized necklace."
+  },
+  {
+    "id": "ac405",
+    "name": "Konoha Bracelet",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/konoha_bracelet.jpg",
+    "description": "Anime customized bracelet."
+  },
+  {
+    "id": "ac406",
+    "name": "Konoha Leaf",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/konoha_leaf.jpg",
+    "description": "Anime customized bracelet."
+  },
+  {
+    "id": "ac407",
+    "name": "Mangekyo",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/mangekyo.jpg",
+    "description": "Anime customized necklace."
+  },
+  {
+    "id": "ac408",
+    "name": "StrawHat",
+    "category": "Accessories",
+    "price": 300.00,
+    "image": "assets/images/strawhat.jpg",
+    "description": "Anime customized necklace."
+  },
+  {
+  "id": "ac409",
+  "name": "Hanafuda Earrings",
+  "category": "Accessories",
+  "price": 950.00,
+  "image": "assets/images/hanafuda_earrings.jpg",
+  "description": "Anime customized earrings."
   }
 ]
