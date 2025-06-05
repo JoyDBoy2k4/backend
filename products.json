@@ -97,6 +97,30 @@
   },
   {
     "id": "uw013",
+    "name": "Benimaru",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/benimaru.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw014",
+    "name": "Captain Yami",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/captain_yami.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw015",
+    "name": "Deku",
+    "category": "Upperwear",
+    "price": 450.00,
+    "image": "assets/images/deku.jpg",
+    "description": "Anime customized t-shirt."
+  },
+  {
+    "id": "uw016",
     "name": "Company 8",
     "category": "Upperwear",
     "price": 950.00,
@@ -104,15 +128,7 @@
     "description": "Anime customized hoody."
   },
   {
-    "id": "uw014",
-    "name": "Heart Pirates",
-    "category": "Upperwear",
-    "price": 950.00,
-    "image": "assets/images/heart_pirates.jpg",
-    "description": "Anime customized hoody."
-  },
-  {
-    "id": "uw015",
+    "id": "uw017",
     "name": "One Piece Hoodie",
     "category": "Upperwear",
     "price": 950.00,
@@ -120,7 +136,7 @@
     "description": "Anime customized hoody."
   },
   {
-    "id": "uw016",
+    "id": "uw018",
     "name": "Scouts Legion",
     "category": "Upperwear",
     "price": 950.00,
@@ -128,7 +144,7 @@
     "description": "Anime customized hoody."
   },
   {
-    "id": "uw017",
+    "id": "uw019",
     "name": "Scouts Legion Coat",
     "category": "Upperwear",
     "price": 950.00,
@@ -145,11 +161,11 @@
   },
   {
     "id": "lw102",
-    "name": "Heart Pirates",
+    "name": "OP Heart Pirates",
     "category": "Lowerwear",
     "price": 950.00,
-    "image": "assets/images/heart_pirates.jpg",
-    "description": "Anime customized jeans."
+    "image": "assets/images/op_heart_pirates.jpg",
+    "description": "Anime customized shorts."
   },
   {
     "id": "lw103",
@@ -308,7 +324,7 @@
     "name": "Strawhat Cap",
     "category": "Headwear",
     "price": 450.00,
-    "image": "assets/images/strawhat.jpg",
+    "image": "assets/images/strawhat_cap.jpg",
     "description": "Anime customized caps."
   },
   {
@@ -416,3 +432,4 @@
   "description": "Anime customized earrings."
   }
 ]
+
